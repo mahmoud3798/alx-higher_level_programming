@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+result = ""
 for i in range(100):
-    print("{:02d}".format(i), end="")
+    result += "{:02d}".format(i)
     if i != 99:
-        print(", ", end="")
-    else:
-        print()
+        result += ", "
+
+print(result)
